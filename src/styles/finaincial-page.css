@@ -1,0 +1,135 @@
+.finance-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.finance-page .dates {
+  width: 80%;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.finance-page .date-picker {
+  margin-block-end: 60px;
+  display: flex;
+  flex-direction: row-reverse;
+
+  align-items: center;
+}
+
+.finance-page .date-picker label {
+  color: var(--secondry-color);
+  margin-inline-start: 30px;
+}
+
+.finance-page .details-container {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.finance-page .details-container .income,
+.finance-page .details-container .outcome,
+.finance-page .details-container .employees {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--secondry-color);
+  height: 630px;
+  min-width: 200px;
+  max-width: 500px;
+  margin-inline: 45px;
+  border-radius: 8px;
+  overflow: scroll;
+}
+
+.finance-page .details-container .income h1,
+.finance-page .details-container .outcome h1,
+.finance-page .details-container .employees h1 {
+  font-weight: bold;
+  position: relative;
+}
+
+.finance-page .details-container .income h1::after,
+.finance-page .details-container .outcome h1::after,
+.finance-page .details-container .employees h1::after {
+  position: absolute;
+  content: "";
+  width: 38%;
+  height: 2px;
+  background-color: var(--main-color);
+  bottom: -5px;
+  left: 31%;
+  opacity: 0.2;
+}
+
+.finance-page .details-container .header,
+.finance-page .details-container .employees .emp-work-header {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+  width: 450px;
+  position: relative;
+}
+
+.finance-page .details-container .header::after {
+  position: absolute;
+  content: "";
+  width: 85%;
+  height: 2px;
+  background-color: var(--main-color);
+  bottom: -5px;
+  left: 7%;
+  opacity: 0.2;
+}
+
+.finance-page .details-container .order div {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+
+.finance-page .details-container .order div h4 {
+  max-width: 150px;
+  word-wrap: break-word;
+}
+
+.finance-page .details-container .order div::after {
+  position: absolute;
+  content: "";
+  width: 70%;
+  height: 2px;
+  background-color: var(--main-color);
+  top: 90%;
+  left: 15%;
+  opacity: 0.2;
+}
+
+.finance-page .total-calcs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-block: 45px;
+  border-radius: 8px;
+  background-color: var(--secondry-color);
+}
+
+.finance-page .total-calcs p {
+  margin-inline-end: 56px;
+}
+
+.finance-page .total-calcs .calc {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+}

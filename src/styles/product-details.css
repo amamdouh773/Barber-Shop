@@ -1,0 +1,25 @@
+.product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondry-color);
+  direction: rtl;
+  border-radius: 10px;
+}
+
+.product-card .detail input {
+  width: 500px;
+  margin-inline-end: 15px;
+  background-color: white;
+  border: 1px solid var(--main-color);
+  height: 30px;
+  font-size: 22px;
+  border-radius: 5px;
+  outline: none;
+  margin-block-end: 30px;
+}
+
+.product-card .price-btn {
+  margin-block: 25px;
+}

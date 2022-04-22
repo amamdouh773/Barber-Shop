@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=El+Messiri&display=swap");
+
+:root {
+  --main-color: #352f44;
+  --secondry-color: #e6f5ff;
+  --main-font: "El Messiri", sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--main-font);
+
+  background-color: var(--main-color);
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.submit-order {
+  margin-block: 35px;
+  width: 100px;
+  height: 40px;
+  border-radius: 7px;
+  border: 1px solid var(--main-color);
+  background-color: var(--main-color);
+  outline: none;
+  color: var(--secondry-color);
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-inline-end: 15px;
+}
+.submit-order:hover {
+  background-color: #1e5f74;
+  transition: all 0.3s ease-in-out;
+}

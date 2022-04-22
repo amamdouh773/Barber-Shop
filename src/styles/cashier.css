@@ -1,0 +1,86 @@
+.cashier-container {
+  background-color: var(--secondry-color);
+  color: var(--main-color);
+  width: 500px;
+  border-radius: 7px;
+  margin-block-end: 50px;
+  direction: rtl;
+}
+
+.cashier-container h2 {
+  font-weight: bold;
+  position: relative;
+}
+
+.cashier-container h2::after {
+  position: absolute;
+  content: "";
+  width: 38%;
+  height: 2px;
+  background-color: var(--main-color);
+  bottom: -5px;
+  left: 31%;
+  opacity: 0.2;
+}
+
+.cashier-container .order-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.cashier-container .order-container .order {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+}
+
+.cashier-container .order-container .order h4 {
+  width: 150px;
+}
+
+.cashier-container .order-container .order p {
+  direction: ltr;
+}
+
+.cashier-container .order-container .order::after {
+  position: absolute;
+  content: "";
+  width: 70%;
+  height: 2px;
+  background-color: var(--main-color);
+  top: 90%;
+  left: 15%;
+  opacity: 0.2;
+}
+
+.cashier-container .order-container .order .delete-container {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.cashier-container .order-container .order .delete-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.cashier-container .order-container .order .discount-input {
+  background-color: white;
+  border: 1px solid var(--main-color);
+  width: 80px;
+  height: 20px;
+  border-radius: 5px;
+  outline: none;
+}
+
+.cashier-container .order .submit-order {
+  height: 27px;
+  width: 80px;
+}
+
+.cashier-container .order .selection {
+  width: 125px;
+  height: 27px;
+  border-radius: 4px;
+}

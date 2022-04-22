@@ -1,0 +1,35 @@
+.service-card-container .product-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.service-card-container .product {
+  display: flex;
+  flex-direction: column;
+}
+
+.service-card-container .service .product-name {
+  font-weight: bold;
+  font-size: 30px;
+  color: var(--main-color);
+}
+
+.service-card-container .product-details .inputs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.service-card-container .product-details .inputs .discount-input {
+  margin-inline: 15px;
+  background-color: white;
+  border: 1px solid var(--main-color);
+  width: 80px;
+  height: 30px;
+  font-size: 22px;
+  border-radius: 5px;
+  outline: none;
+}
